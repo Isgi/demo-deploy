@@ -4,4 +4,4 @@ var config = require('./config.js');
 /*
  * Start server
  */
-app.listen(config.PORT);
+app.listen(process.env.PORT || config.PORT);
